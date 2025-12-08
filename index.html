@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>サイトタイトル（あとで変えてOK）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ページ全体の見た目（ダークモード寄り） -->
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #14161a;      /* 真っ黒ではなく、少しだけ明るい暗さ */
+      color: #e5e5e5;           /* まぶしすぎない白 */
+      line-height: 1.7;
+    }
+
+    a {
+      color: #8fd3ff;           /* 少しだけ明るい青（リンク） */
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrapper {
+      max-width: 960px;         /* 横幅の上限（これ以上広がらない） */
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    header {
+      background: #1c1f25;
+      border-bottom: 1px solid #333;
+      padding: 1.2rem 0 0.7rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      margin: 0 0 0.4rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    main {
+      padding: 2rem 0;
+    }
+
+    .card {
+      background: #20242c;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.15rem;
+      border-bottom: 1px solid #3a3f4a;
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    footer {
+      background: #1c1f25;
+      border-top: 1px solid #333;
+      padding: 1rem 0;
+      font-size: 0.85rem;
+      color: #aaaaaa;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      /* スマホの時、ヘッダーを固定しない */
+      header {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 上の帯（サイトタイトル＋メニュー） -->
+  <header>
+    <div class="wrapper">
+      <h1>サイトタイトル（ここを書き換えてください）</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="works.html">作品一覧</a></li>
+          <li><a href="about.html">サイトについて</a></li>
+          <li><a href="notes.html">雑記</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 本文 -->
+  <main>
+    <div class="wrapper">
+      <section class="card">
+        <h2>ごあいさつ</h2>
+        <p>
+          ここに、このサイト全体の説明を書きます。<br>
+          例：一次創作・二次創作の小説や短文を置いていること、<br>
+          利用上の注意（原作を害する意図はない 等）など。
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>更新情報</h2>
+        <ul>
+          <li>2025-12-08　サイトの骨組みを作りました。</li>
+          <!-- ↑ 新しい更新があったら、ここに1行ずつ増やしていけばOK -->
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- 一番下の帯（コピーライトなど） -->
+  <footer>
+    <div class="wrapper">
+      <p>© 2025 あなたの名前. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

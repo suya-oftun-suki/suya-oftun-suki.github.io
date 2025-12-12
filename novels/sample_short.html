@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- ここに、index.html と同じ <style> を丸ごとコピペしてもOK -->
   <!-- まずは最低限の本文だけ確認したいなら、style はあとからでも大丈夫 -->
+  
   <style>
+    
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -47,23 +49,64 @@
 }
 
   </style>
+  
 </head>
+  
 <body>
+  
   <div class="wrapper">
+    
     <div class="backlink">
+      
       ← <a href="../works.html">作品一覧に戻る</a>
+      
     </div>
 
     <h1>サンプル作品タイトル</h1>
 
     <div class="novel-body">
+      
       <p>ここに本文を入れていきます。</p>
       <p>段落ごとに &lt;p&gt; ... &lt;/p&gt; で囲むことで、読みやすい空行が入ります。</p>
         <p>一つ目の段落の文章がここに入ります。</p>
 
   <p>二つ目の段落の文章。<br>
   行内で改行したいときは &lt;br&gt; を使います。</p>
+      
     </div>
+    
   </div>
+  
+  <script>
+  // 右クリックメニューを無効化
+  document.addEventListener('contextmenu', function (e) {
+    // 小説本文の上だけ無効化したい場合
+    if (e.target.closest('.novel-body')) {
+      e.preventDefault();
+    }
+  });
+
+  // コピーなどのショートカットを無効化
+  document.addEventListener('keydown', function (e) {
+    // 本文上にフォーカスがあるときだけ対象にしたいなら、
+    // 厳密にやるのは少し難しいですが、まずは「全体」でかけてもOKです。
+    // ここでは Ctrl/⌘ + C / X / S / U / P あたりをブロック。
+    if (e.ctrlKey || e.metaKey) {
+      const k = e.key.toLowerCase();
+      if (['c', 'x', 's', 'u', 'p'].includes(k)) {
+        e.preventDefault();
+      }
+    }
+
+    // F12（開発者ツール）などもブロックしようとする例
+    // ただし、これはブラウザや環境によって効かないことも多いです。
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+  });
+    
+</script>
+
 </body>
+  
 </html>

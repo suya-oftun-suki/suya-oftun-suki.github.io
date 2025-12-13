@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>書く習慣（アプリ）まとめ - 寝床（仮）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #14110e;      /* 背景色 */
+      color: #f0dfc0;           /* 本文テキスト色 */
+      line-height: 1.7;
+    }
+
+    a {
+      color: #ba7841;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    header {
+      background: #181512;
+      border-bottom: 1px solid #3a312b;
+      padding: 1.2rem 0 0.7rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      margin: 0 0 0.4rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    main { padding: 2rem 0; }
+
+    .card {
+      background: #201f1e;   /* 背景（カード/本文枠）・文章エリア用 */
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.15rem;
+      border-bottom: 1px solid #3a312b;   /* 区切り線 */
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: #bfaf9f;
+      margin: 0.2rem 0 0.8rem;
+    }
+
+    /* 作品本文：読みやすさ重視 */
+    .novel {
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+    }
+    .novel p { margin: 0 0 1em; }
+
+    /* 作品区切り：見出し＋小さな余白 */
+    .work-title {
+      font-size: 1.05rem;
+      margin: 0 0 0.2rem;
+    }
+
+    /* 目次っぽい一覧 */
+    .toc ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .toc li { margin: 0.25rem 0; }
+
+    footer {
+      background: #181512;
+      border-top: 1px solid #3a312b;
+      padding: 1rem 0;
+      font-size: 0.85rem;
+      color: #bfaf9f;             /* 補助テキスト・注釈・日付など */
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header { position: static; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- サイト共通ヘッダー（あなたのサイトの他ページに合わせてください） -->
+  <header>
+    <div class="wrapper">
+      <h1>書く習慣まとめ</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="works.html">作品一覧</a></li>
+          <li><a href="about.html">サイトについて</a></li>
+          <li><a href="notes.html">雑記</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+
+      <!-- 入口（戻る導線） -->
+      <section class="card">
+        <h2>このページについて</h2>
+        <p>
+          短編をいくつか、1ページにまとめて置きます。<br>
+          （ここはあとで自由に書き換えOK）
+        </p>
+        <p class="meta">
+          ← <a href="works.html">作品一覧へ戻る</a>
+        </p>
+      </section>
+
+      <!-- 目次（作品が増えるほど便利） -->
+      <section class="card toc">
+        <h2>目次</h2>
+        <ul>
+          <li><a href="#t1">短編タイトル１</a></li>
+          <li><a href="#t2">短編タイトル２</a></li>
+          <li><a href="#t3">短編タイトル３</a></li>
+        </ul>
+        <p class="meta">※タイトルをクリックすると、その作品位置へ飛びます。</p>
+      </section>
+
+      <!-- 作品1 -->
+      <section class="card novel" id="t1">
+        <h2 class="work-title">短編タイトル１</h2>
+        <p class="meta">（任意）2025-12-13 / ジャンル / 注意書きなど</p>
+
+        <p>ここに本文の段落１。</p>
+        <p>ここに本文の段落２。</p>
+        <p>ここに本文の段落３。</p>
+
+        <p class="meta">↑ <a href="#top">ページ上部へ</a></p>
+      </section>
+
+      <!-- 作品2 -->
+      <section class="card novel" id="t2">
+        <h2 class="work-title">短編タイトル２</h2>
+        <p class="meta">（任意）注意書きなど</p>
+
+        <p>ここに本文。</p>
+        <p>ここに本文。</p>
+      </section>
+
+      <!-- 作品3 -->
+      <section class="card novel" id="t3">
+        <h2 class="work-title">短編タイトル３</h2>
+        <p class="meta">（任意）注意書きなど</p>
+
+        <p>ここに本文。</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer id="top">
+    <div class="wrapper">
+      <p>© 2025 真睡ねむ（仮）. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

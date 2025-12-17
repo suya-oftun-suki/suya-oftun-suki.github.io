@@ -2,21 +2,20 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>作品一覧 - 寝床（仮）</title>
+  <title>作品一覧 - 寝床</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- ページ全体の見た目（ダークモード寄り） -->
   <style>
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #14110e;      /* 背景色 */
-      color: #f0dfc0;           /* 本文テキスト色 */
+      background: #14110e;
+      color: #f0dfc0;
       line-height: 1.7;
     }
 
     a {
-      color: #ba7841;           /* リンク・操作要素 */
+      color: #ba7841;
       text-decoration: none;
     }
     a:hover {
@@ -24,14 +23,14 @@
     }
 
     .wrapper {
-      max-width: 960px;         /* 横幅の上限（これ以上広がらない） */
+      max-width: 960px;
       margin: 0 auto;
       padding: 0 1rem;
     }
 
     header {
-      background: #181512;          /* ヘッダー・フッター色 */
-      border-bottom: 1px solid #3a312b;  /* 区切り線＋色 */
+      background: #181512;
+      border-bottom: 1px solid #3a312b;
       padding: 1.2rem 0 0.7rem;
       position: sticky;
       top: 0;
@@ -58,7 +57,7 @@
     }
 
     .card {
-      background: #201f1e;   /* 背景（カード/本文枠）・文章エリア用 */
+      background: #201f1e;
       border-radius: 10px;
       padding: 1.5rem;
       margin-bottom: 1.5rem;
@@ -68,73 +67,65 @@
     h2 {
       margin-top: 0;
       font-size: 1.15rem;
-      border-bottom: 1px solid #3a312b;   /* 区切り線 */
+      border-bottom: 1px solid #3a312b;
       padding-bottom: 0.3rem;
       margin-bottom: 0.8rem;
     }
 
     footer {
-      background: #181512;        /* ヘッダー・フッター色 */
-      border-top: 1px solid #3a312b;  /* 区切り線＋色 */
+      background: #181512;
+      border-top: 1px solid #3a312b;
       padding: 1rem 0;
       font-size: 0.85rem;
-      color: #bfaf9f;             /* 補助テキスト・注釈・日付など */
+      color: #bfaf9f;
       text-align: center;
     }
 
     @media (max-width: 600px) {
-      /* スマホの時、ヘッダーを固定しない */
       header {
         position: static;
       }
     }
   </style>
 </head>
+
 <body>
-  <!-- 上の帯（サイトタイトル＋メニュー） -->
+
   <header>
     <div class="wrapper">
       <h1>作品一覧</h1>
       <nav>
         <ul>
           <li><a href="index.html">ホーム</a></li>
-          <li><a href="works.html">作品一覧</a></li>
+          <li><a href="works_interim.html">作品一覧</a></li>
           <li><a href="about.html">サイトについて</a></li>
-          <li><a href="notes.html">雑記</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- 本文 -->
 <main>
   <div class="wrapper">
     
     <section class="card">
-      <h2>短編・掌編</h2>
+        <p>
+        作品の投稿先や公開情報は、noteにまとめています。
+        </p>
       <ul>
-        <li><a href="novels/short/writing_habits.html">書く習慣（アプリ）</a></li>
-        <li><a href="novels/short/sample_short.html">サンプル作品タイトル</a></li>
-      </ul>
-    </section>
-    
-        <section class="card">
-      <h2>長編</h2>
-      <ul>
-        <li><a href="novels/sample_long.html">サンプル作品タイトル</a></li>
-        <!-- 作品が増えたら li を増やしていく -->
+        <li><a href="https://note.com/suya_oftun_suki/n/n5943c6e6a47b">note記事（外部サイト）</a></li>
       </ul>
     </section>
     
   </div>
 </main>
 
-  <!-- 一番下の帯（コピーライトなど） -->
   <footer>
     <div class="wrapper">
-      <p>© 2025 真睡ねむ（仮）. All rights reserved.</p>
+      <p>© 2025 真睡ねむ</p>
     </div>
   </footer>
+
 </body>
+
 </html>
 
